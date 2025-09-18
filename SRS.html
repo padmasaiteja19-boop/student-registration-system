@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="srs.css">
+</head>
+<body>
+  <header>
+    <h1>Student Registration System</h1>
+    <p>Register students, view, edit, and delete records. Responsive and persistent!</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Register New Student</h2>
+      <form id="student-form">
+        <input type="text" id="studentName" placeholder="Student Name" required>
+        <input type="number" id="studentID" placeholder="Student ID" required>
+        <input type="email" id="email" placeholder="Email ID" required>
+        <input type="text" id="contact" placeholder="Contact Number" required>
+        <button type="submit">Add Student</button>
+        <button type="reset">Reset</button>
+      </form>
+      <div id="form-error" class="error"></div>
+    </section>
+
+    <section class="table-section">
+      <h2>Registered Students</h2>
+      <div class="table-container">
+        <table id="students-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="srs.js"></script>
+</body>
+</html>
